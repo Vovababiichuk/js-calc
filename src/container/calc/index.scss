@@ -255,3 +255,11 @@ button:focus {
     background-color: #494a54;
   }
 }
+
+@media (max-width: 600px) {
+  .calculator {
+    width: 300px;
+    position: sticky;
+    transform: translate(-50%, 6%);
+  }
+}
