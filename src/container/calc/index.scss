@@ -168,12 +168,13 @@ button:focus {
   background: #f1f2f3;
   background: #151515;
   background: #17171c;
+  background: #0c0c0d;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.75rem;
   width: 325px;
-  //   border: 2px solid #bbdbff;
-  box-shadow: 0 0 10px #ffffff;
+  border: 2px solid #ffc800;
+  box-shadow: 0 0 30px #ffa200;
   padding: 100px 20px 32px 20px;
   border-radius: 40px;
   position: fixed;
@@ -194,12 +195,40 @@ button:focus {
     right: 20px;
   }
 
+  .top-center-icon {
+    content: '';
+    position: absolute;
+    background-image: url('/img/svg/calc-svg/status-bar.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 15px;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .top-left {
     content: '';
     position: absolute;
     top: 30px;
     left: 20px;
     color: #fff;
+  }
+
+  .indicator-white {
+    content: '';
+    position: absolute;
+    background-image: url('/img/svg/calc-svg/indicator-white.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 94px;
+    height: 1px;
+    top: 595px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -209,7 +238,7 @@ button:focus {
   font-size: 48px;
   height: 96px;
   color: #fff;
-  background: #17171c;
+  background: #0c0c0d;
   text-align: end;
   padding: 0.5rem;
   font-weight: 300;
@@ -261,5 +290,15 @@ button:focus {
     width: 300px;
     position: sticky;
     transform: translate(-50%, 6%);
+    .indicator-white {
+      top: 563px;
+    }
   }
-}
+  
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  }
+
+

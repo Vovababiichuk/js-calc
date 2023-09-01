@@ -1,30 +1,49 @@
 @use '../../style' as s;
 
 main {
-	background: #171717;
-	color: s.color(light);
-	min-height: 100vh;
-} 
+//   background: #171717;
+background-color: #0000004c;
+  background-blend-mode: multiply;
+  color: s.color(light);
+  min-height: 100vh;
+}
 
 .calc-btn {
-	font-size: 32px;
-	text-align: center;
-	margin: 0 auto;
-	background-color: #7441ff;
-	padding: 20px 40px;
-	border-radius: 10px;
-	display: block;
-	max-width: fit-content;
-	color: s.color(light);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	transition: 0.15s ease;
-	text-transform: uppercase;
-	text-decoration: none;
+  font-size: 46px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #2f2f2f;
+  padding: 40px 80px;
+  border-radius: 60px;
+  display: block;
+  max-width: fit-content;
+  color: #fff;;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.15s ease;
+  text-transform: uppercase;
+  text-decoration: none;
 
-	&:hover {
-		opacity: 0.9;
-	}
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+//===========================
+body {
+	background: linear-gradient(45deg, #FF5733 50%, #33FF57 50%);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 100vh; /* Зробити фон на весь висоту вікна */
+	margin: 0;
+	padding: 0;
  }
+ 
+
+ @media screen and (max-width: 568px) {
+    .calc-btn {
+      padding: 30px 21px;
+    }
+  }

@@ -127,3 +127,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // в середині window в будь-яку нашу властивість ми кладемо наш class Calc
 window.calc = Calc
+
+
+const audio = document.getElementById("myAudio");
+
+window.addEventListener("load", () => {
+  audio.play();
+});
+

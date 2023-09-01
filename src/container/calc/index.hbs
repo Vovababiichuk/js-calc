@@ -6,14 +6,17 @@
 <main>
     <section>
         <div class="wrapper">
+            <audio id="myAudio" src="/audio/audio.mp3" autoplay loop preload="auto" volume="0.1"></audio>
             <div class="glass">
                 <div class="container">
                     <div class="calculator">
                         <div class="calculator-top">
+                            <span class="top-center-icon"></span>
                         {{#with data.time}}
                             <span id="clock" class="top-left">{{this}}</span>
                         {{/with}}
                             <span class="top-right-icon"></span>
+                            <span class="indicator-white"></span>
                         </div>
                         <input type="text" class="screen"
                             placeholder="0" value="" id="output">
