@@ -1,0 +1,90 @@
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+
+<main>
+    <section>
+        <div class="wrapper">
+            <div class="glass">
+                <div class="container">
+                    <div class="calculator">
+                        <div class="calculator-top">
+                        {{#with data.time}}
+                            <span id="clock" class="top-left">{{this}}</span>
+                        {{/with}}
+                            <span class="top-right-icon"></span>
+                        </div>
+                        <input type="text" class="screen"
+                            placeholder="0" value="" id="output">
+                        <button class="symbol grey" onclick="calc.reset()">
+                            <span class="icon1"></span>
+                        </button>
+                        <button class="symbol grey" onclick="calc.toggleSign()">
+                            <span class="icon2"></span>
+                        </button>
+                        <button class="symbol grey" onclick="calc.calcPercent()">
+                            <span class="icon3"></span>
+                        </button>
+                        <button class="symbol" onclick="calc.op('/')">
+                            <span class="icon4"></span>
+                        </button>
+                        <button class="number" onclick="calc.add(7)">
+                            <span class="num7"></span>
+                        </button>
+                        <button class="number" onclick="calc.add(8)">
+                            <span class="num8"></span>
+                        </button>
+                        <button class="number" onclick="calc.add(9)">
+                            <span class="num9"></span>
+                        </button>
+                        <button class="symbol" onclick="calc.op('*')">
+                            <span class="icon5"></span>
+                        </button>
+                        <button class="number" onclick="calc.add(4)">
+                            <span class="num4"></span>
+                        </button>
+                        <button class="number" onclick="calc.add(5)">
+                            <span class="num5"></span>
+                        </button>
+                        <button class="number" onclick="calc.add(6)">
+                            <span class="num6"></span>
+                        </button>
+                        <button class="symbol" onclick="calc.op('-')">
+                            <span class="icon6"></span>
+                        </button>
+                        <button class="number" onclick="calc.add(1)">
+                            <span class="num1"></span>
+                        </button>
+                        <button class="number" onclick="calc.add(2)">
+                            <span class="num2"></span>
+                        </button>
+                        <button class="number" onclick="calc.add(3)">
+                            <span class="num3"></span>
+                        </button>
+                        <button class="symbol" onclick="calc.op('+')">
+                            <span class="icon7"></span>
+                        </button>
+                        <button class="number" onclick="calc.dot()">
+                            <span class="icon10"></span>
+                        </button>
+                        <button class="number" onclick="calc.add(0)">
+                            <span class="num0"></span>
+                        </button>
+                        <button class="number" onclick="calc.delete()">
+                            <span class="icon9"></span>
+                        </button>
+                        <button class="symbol" onclick="calc.result()">
+                            <span class="icon8"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{{!
+Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+    }}

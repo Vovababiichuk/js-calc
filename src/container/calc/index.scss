@@ -1,0 +1,257 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  padding: 0;
+  background-color: #171717;
+}
+
+.wrapper {
+  background-color: #00000013;
+  background-blend-mode: multiply;
+  background-image: url('/img/calc-img/18.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  min-height: 100vh;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+
+  .icon1,
+  .icon2,
+  .icon3,
+  .icon4,
+  .icon5,
+  .icon6,
+  .icon7,
+  .icon8,
+  .icon9,
+  .icon10,
+  .num0,
+  .num1,
+  .num2,
+  .num3,
+  .num4,
+  .num5,
+  .num6,
+  .num7,
+  .num8,
+  .num9,
+  .top-right-icon {
+    background-image: url('/img/svg/calc-svg/icon1.svg');
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+  }
+
+  .icon2 {
+    background-image: url('/img/svg/calc-svg/icon2.svg');
+  }
+
+  .icon3 {
+    background-image: url('/img/svg/calc-svg/icon3.svg');
+  }
+
+  .icon4 {
+    background-image: url('/img/svg/calc-svg/icon4.svg');
+  }
+
+  .icon5 {
+    background-image: url('/img/svg/calc-svg/icon5.svg');
+  }
+
+  .icon6 {
+    background-image: url('/img/svg/calc-svg/icon6.svg');
+  }
+
+  .icon7 {
+    background-image: url('/img/svg/calc-svg/icon7.svg');
+  }
+
+  .icon8 {
+    background-image: url('/img/svg/calc-svg/icon8.svg');
+  }
+
+  .icon9 {
+    background-image: url('/img/svg/calc-svg/icon9.svg');
+  }
+
+  .icon10 {
+    background-image: url('/img/svg/calc-svg/icon10.svg');
+    background-position: bottom;
+  }
+
+  .num0 {
+    background-image: url('/img/svg/calc-svg/num0.svg');
+  }
+
+  .num1 {
+    background-image: url('/img/svg/calc-svg/num1.svg');
+  }
+
+  .num2 {
+    background-image: url('/img/svg/calc-svg/num2.svg');
+  }
+
+  .num3 {
+    background-image: url('/img/svg/calc-svg/num3.svg');
+  }
+
+  .num4 {
+    background-image: url('/img/svg/calc-svg/num4.svg');
+  }
+
+  .num5 {
+    background-image: url('/img/svg/calc-svg/num5.svg');
+  }
+
+  .num6 {
+    background-image: url('/img/svg/calc-svg/num6.svg');
+  }
+
+  .num7 {
+    background-image: url('/img/svg/calc-svg/num7.svg');
+  }
+
+  .num8 {
+    background-image: url('/img/svg/calc-svg/num8.svg');
+  }
+
+  .num9 {
+    background-image: url('/img/svg/calc-svg/num9.svg');
+  }
+}
+
+button:focus {
+  outline: none;
+}
+
+.calculator {
+  background: #f1f2f3;
+  background: #151515;
+  background: #17171c;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  width: 325px;
+  //   border: 2px solid #bbdbff;
+  box-shadow: 0 0 10px #ffffff;
+  padding: 100px 20px 32px 20px;
+  border-radius: 40px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .top-right-icon {
+    content: '';
+    position: absolute;
+    background-image: url('/img/svg/calc-svg/top-right-icon.svg');
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 66px;
+    height: 12px;
+    top: 30px;
+    right: 20px;
+  }
+
+  .top-left {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    color: #fff;
+  }
+}
+
+.screen {
+  grid-column: 1 / 5;
+  border-radius: 0.75rem;
+  font-size: 48px;
+  height: 96px;
+  color: #fff;
+  background: #17171c;
+  text-align: end;
+  padding: 0.5rem;
+  font-weight: 300;
+}
+
+::placeholder {
+  color: #6e6e6e;
+}
+
+.symbol,
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  aspect-ratio: 1;
+  color: #fff;
+  border-radius: 20px;
+  transition: 0.15s ease;
+}
+
+.symbol {
+  background: #4b5efc;
+}
+
+.symbol:hover {
+  background: #4b5dfcc8;
+}
+
+.number {
+  background: #2e2f38;
+}
+
+.number:hover {
+  background: #3c3d49;
+}
+
+.grey {
+  background-color: #4e505f;
+  transition: background-color 0.15s ease;
+
+  &:hover {
+    background-color: #494a54;
+  }
+}
