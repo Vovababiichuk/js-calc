@@ -279,6 +279,10 @@ button:focus {
   color: #fff;
   border-radius: 20px;
   transition: 0.15s ease;
+
+  &:active {
+    background-color:  #ff4400;
+  }
 }
 
 .symbol {
