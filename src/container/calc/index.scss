@@ -7,13 +7,19 @@ body {
 .wrapper {
   background-color: #00000013;
   background-blend-mode: multiply;
-  background-image: url('/img/calc-img/18.webp');
+  background-image: url('/img/calc-img/bg.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: #fff;
   min-height: 100vh;
+}
+
+@keyframes animateBg {
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 .glass {
@@ -188,8 +194,8 @@ button:focus {
   grid-template-columns: repeat(4, 1fr);
   gap: 0.75rem;
   width: 325px;
-  border: 2px solid #ffc800;
-  box-shadow: 0 0 30px #ffa200;
+  border: 2px solid #4b5efc;
+  box-shadow: 0 0 30px #4b5efc;
   padding: 100px 20px 32px 20px;
   border-radius: 40px;
   position: fixed;
@@ -250,7 +256,7 @@ button:focus {
 .screen {
   grid-column: 1 / 5;
   border-radius: 0.75rem;
-  font-size: 48px;
+  font-size: 44px;
   height: 96px;
   color: #fff;
   background: #0c0c0d;
