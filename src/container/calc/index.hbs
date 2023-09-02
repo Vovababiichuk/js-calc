@@ -5,28 +5,94 @@
 
 <main>
     <section>
+        <div class="preloader">
+            <div class="pulse">
+                <div id='center'></div>
+                <div id='left-cheek-ball-1'></div>
+                <div id='left-cheek-ball-2'></div>
+                <div id='left-cheek-ball-3'></div>
+                <div id='right-cheek-ball-1'></div>
+                <div id='right-cheek-ball-2'></div>
+                <div id='right-cheek-ball-3'></div>
+                <div id='left-ear'></div>
+                <div id='left-ear-wax'></div>
+                <div id='left-ear-plug'></div>
+                <div id='right-ear'></div>
+                <div id='right-ear-wax'></div>
+                <div id='right-ear-plug'></div>
+                <div id='top-hair'></div>
+                <div id='top-hair-mask'></div>
+                <div id='head'></div>
+                <div id='cheeks'></div>
+                <div id='receding-hairline-1'></div>
+                <div id='receding-hairline-2'></div>
+                <div id='receding-hairline-3'></div>
+                <div id='receding-hairline-4'></div>
+                <div id='left-eye-socket'></div>
+                <div id='right-eye-socket'></div>
+                <div id='mouth-socket'></div>
+                <div id='right-eye'></div>
+                <div id='right-numbers'>
+                    <p>&nbsp;&nbsp;01</p>
+                    <p>1001</p>
+                    <p>1101</p>
+                    <p>&nbsp;011</p>
+                </div>
+                <div id='left-eye'></div>
+                <div id='left-numbers'>
+                    <p>0101</p>
+                    <p>0100</p>
+                    <p>&nbsp;&nbsp;&nbsp;01</p>
+                </div>
+                <div id='hitler-mustache'></div>
+                <div id='left-nose'></div>
+                <div id='left-nose-shadow'></div>
+                <div id='left-nose-hole'></div>
+                <div id='right-nose'></div>
+                <div id='right-nose-shadow'></div>
+                <div id='right-nose-hole'></div>
+                <div id='left-lip'></div>
+                <div id='right-lip'></div>
+                <div id='jay-leno-left'></div>
+                <div id='jay-leno-right'></div>
+                <div id='mouth'></div>
+                <div id='tongue'></div>
+                <div id='tongue-shadow'></div>
+                <div id='jay-lenno-mask'></div>
+            </div>
+        </div>
         <div class="wrapper">
-            <audio id="myAudio" src="/audio/audio.mp3" autoplay loop preload="auto" volume="0.1"></audio>
+            <audio id="myAudio" src="/audio/audio.mp3" autoplay loop></audio>
             <div class="glass">
-                <div class="container">
+                <div class="content">
                     <div class="calculator">
                         <div class="calculator-top">
                             <span class="top-center-icon"></span>
-                        {{#with data.time}}
+                            {{#with data.time}}
                             <span id="clock" class="top-left">{{this}}</span>
-                        {{/with}}
+                            {{/with}}
                             <span class="top-right-icon"></span>
                             <span class="indicator-white"></span>
                         </div>
                         <input type="text" class="screen"
-                            placeholder="0" value="" id="output">
+                            placeholder="0" value id="output">
+                        <div class="text">
+                            <span>H</span>
+                            <span>E</span>
+                            <span>L</span>
+                            <span>L</span>
+                            <span>O</span>
+                            <span>!</span>
+                        </div>
                         <button class="symbol grey" onclick="calc.reset()">
                             <span class="icon1"></span>
                         </button>
-                        <button class="symbol grey" onclick="calc.toggleSign()">
+                        <button class="symbol grey"
+                            onclick="calc.toggleSign()">
                             <span class="icon2"></span>
                         </button>
-                        <button class="symbol grey" onclick="calc.calcPercent()">
+                        <button class="symbol grey"
+                            onclick="calc.calcPercent()">
                             <span class="icon3"></span>
                         </button>
                         <button class="symbol" onclick="calc.op('/')">

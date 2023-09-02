@@ -135,3 +135,45 @@ window.addEventListener("load", () => {
   audio.play();
 });
 
+
+
+// // script.js
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Час затримки в мілісекундах (наприклад, 2000 мс = 2 секунди)
+//   var delay = 2500;
+
+//   // Відображення preloader
+//   var preloader = document.querySelector(".preloader");
+//   preloader.style.display = "block";
+
+//   // Приховання preloader після затримки
+//   setTimeout(function () {
+//       preloader.style.display = "none";
+
+//       // Відображення контенту після завантаження сторінки
+//       var content = document.querySelector(".wrapper");
+//       content.style.display = "block";
+//   }, delay);
+// });
+
+// Чекаємо завантаження сторінки
+window.onload = function () {
+  // Відображення preloader
+  var preloader = document.querySelector(".preloader");
+  preloader.style.display = "block";
+
+  // Приховуємо preloader після затримки
+  setTimeout(function () {
+    preloader.style.display = "none";
+
+    // Відображення контенту після завантаження сторінки
+    var content = document.querySelector(".wrapper");
+    content.style.display = "block";
+  }, 2500); // Затримка 2.5 секунди (як ви вказали у вашому коді)
+};
+
+
+
+
+
+
