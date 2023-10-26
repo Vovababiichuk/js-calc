@@ -33,13 +33,34 @@ background-color: #0000004c;
 
 //===========================
 body {
-	background: linear-gradient(45deg, #FF5733 50%, #33FF57 50%);
-	background-size: 100% 100%;
+  background-color: #00000050;
+  background-blend-mode: multiply;
+  background-image: url('/img/calc-img/bg-main.webp');
+  background-size: cover;
+  background-position: center;
 	background-repeat: no-repeat;
-	height: 100vh; /* Зробити фон на весь висоту вікна */
 	margin: 0;
 	padding: 0;
+  min-height: 100vh;
  }
+
+ .calc-btn {
+  padding: 30px 21px;
+  background-color: #0e0e15c5;
+  box-shadow: #2f2f2f;
+
+  border: 2px solid #2f00ff;
+  padding: 10px 20px; 
+  font-size: 60px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.calc-btn:hover {
+  box-shadow: 0 0 30px #2f00ff;
+}
  
 
  @media screen and (max-width: 568px) {
