@@ -170,7 +170,7 @@ window.onload = function () {
     // Відображення контенту після завантаження сторінки
     var content = document.querySelector(".wrapper");
     content.style.display = "block";
-  }, 100); // Затримка
+  }, 200); // Затримка
 };
 
 
