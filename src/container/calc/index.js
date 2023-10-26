@@ -170,7 +170,7 @@ window.onload = function () {
     // Відображення контенту після завантаження сторінки
     var content = document.querySelector(".wrapper");
     content.style.display = "block";
-  }, 1000); // Затримка 2.5 секунди (як ви вказали у вашому коді)
+  }, 100); // Затримка
 };
 
 
