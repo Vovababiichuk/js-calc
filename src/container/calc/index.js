@@ -157,6 +157,7 @@ window.addEventListener("load", () => {
 // });
 
 // Чекаємо завантаження сторінки
+
 window.onload = function () {
   // Відображення preloader
   var preloader = document.querySelector(".preloader");
@@ -169,7 +170,7 @@ window.onload = function () {
     // Відображення контенту після завантаження сторінки
     var content = document.querySelector(".wrapper");
     content.style.display = "block";
-  }, 2500); // Затримка 2.5 секунди (як ви вказали у вашому коді)
+  }, 1000); // Затримка 2.5 секунди (як ви вказали у вашому коді)
 };
 
 
